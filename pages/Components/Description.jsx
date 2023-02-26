@@ -29,21 +29,21 @@ const Description = ({data}) => {
         <Center>
         <Image
           h="200px"
-          src={data.Images[0]}
-          alt={data.Title}
+          src={data?.Images[0]}
+          alt={data?.Title}
           />
           </Center>
         <Stack mt="6" spacing="3" fontWeight="600">
-          <Heading size="md">{data.Title}</Heading>
-          <Text>{data.Plot}</Text>
-          <Text>{data.Genre}</Text>
-          <Text>{data.Actors}</Text>
-          <Text>Awards : {data.Awards}</Text>
-          <Text>Language : {data.Language}</Text>
-          <Text>Duration : {data.Runtime}</Text>
-          <Text>IMDB Rating : {data.imdbRating}</Text>
-          <Text>IMDB Votes : {data.imdbVotes}</Text>
-          <Text>Released at : {data.Released}</Text>
+          <Heading size="md">{data?.Title}</Heading>
+          <Text>{data?.Plot}</Text>
+          <Text>{data?.Genre}</Text>
+          <Text>{data?.Actors}</Text>
+          <Text>Awards : {data?.Awards}</Text>
+          <Text>Language : {data?.Language}</Text>
+          <Text>Duration : {data?.Runtime}</Text>
+          <Text>IMDB Rating : {data?.imdbRating}</Text>
+          <Text>IMDB Votes : {data?.imdbVotes}</Text>
+          <Text>Released at : {data?.Released}</Text>
           <Button variant="solid" colorScheme="blue" onClick={addToWhislist}>
             Add To Whislist
           </Button>

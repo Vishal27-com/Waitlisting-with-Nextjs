@@ -33,7 +33,7 @@ export default function Home({data}) {
         <SimpleGrid columns={3} w='80%' gap='20px' m='40px auto'>
         {
           data.map((item)=>
-          <MovieCard key={item.id} data={item} />
+          <MovieCard key={item?.id} data={item} />
           )
         }
           </SimpleGrid>

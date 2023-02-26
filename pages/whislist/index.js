@@ -49,11 +49,11 @@ const Whislist = () => {
 {
     data.map((item)=>
         <Tr  key={item.id}>
-          <Td>{item.id}</Td>
-          <Td>{item.Title}</Td>
-          <Td>{item.Runtime}</Td>
-          <Td>{item.Director}</Td>
-          <Td><Button variant='solid' colorScheme='red' onClick={()=>removeFromWhislist(item.id)}>Remove</Button></Td>
+          <Td>{item?.id}</Td>
+          <Td>{item?.Title}</Td>
+          <Td>{item?.Runtime}</Td>
+          <Td>{item?.Director}</Td>
+          <Td><Button variant='solid' colorScheme='red' onClick={()=>removeFromWhislist(item?.id)}>Remove</Button></Td>
         </Tr>
     )
 }        
